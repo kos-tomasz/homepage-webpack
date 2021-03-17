@@ -1,153 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Bawmy się!</title>
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="nav-header">
+      <button class="hamburger hamburger--js">🍔</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--background" href="index.html"
+          >WTReal</a
+        >
+        <a class="navigation__link navigation__link--study" href="wtf.html"
+          >WTFrontend</a
+        >
+        <span class="navigation__link-date nav-date--js"></span>
+      </nav>
+    </header>
+
+    <main class="main" id="top">
+      <header class="header">
+        <h1 class="header__title">WTR: Co ten Real?!</h1>
+        <p class="header__article header__real-article--js"></p>
+        <img
+          class="header__image header__image--real"
+          src="../assets/img/real.png"
+          alt="logo realu"
+        />
+      </header>
+
+      <section class="section">
+        <h2 class="section__heading">Bawmy się!</h2>
+        <div class="grid">
+  
+         <article class="article">
+           <h3 class="article__title"><em>Łatwe</em> zwycięstwo</h3>
+            <p class="article__paragraph">
+              Przyszedł czas na na być albo nie być Realu w Lidze Mistrzów. Mecz z Interem rozpoczął się dla Los Blancos dość szczęśliwie. Przy stanie 2:0 oczywiście musiało się rozluźnić. Pierwsza połowa skończyła się stanem 2:1. Druga połowa to - jak zwykliśmy ostatnio widywać - dramat w wykonaniu ekipy z Madrytu. 
+              Niewykorzystane setki i drugą bramkę Interu, na całe szczęście, przyćmił Rodrigo w końcówce meczu.</br> 3:2 i Real ma <em>już</em> 4 punkty po trzech spotkaniach.. (<b>2</b>:3, 2:<b>2</b>, <b>3</b>:2)
+            </p>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Miłych niespodzianek ciąg dalszy</h3>
+            <p class="article__paragraph">
+              Po pozytywnych wynikach w poprzedniej kolejce, doszła dość smutna
+              informacja dla kibica Los Blancos. Bartomeu podał się z kolegami do
+              dymisji. Zaskoczyło to chyba nawet piłkarzy Blaugrany i nie mogli
+              wyjść z wrażenia nawet podczas swojego spotkania z Alavés, który
+              zremisowali 1:1. Real natomiast po pewnej wygranej 4:1 z Huescą,
+              powiększa przewagę punktową do 8 punktów nad dwunastą w tabeli
+              Barceloną. Plasują się na drugim miejscu za Realem Sociedad.
+            </p>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Pewnego razu w Barcelonie</h3>
+            <p class="article__paragraph">
+              Liga Mistrzów? A po co to komu? Któżby się przejmował grą w Europie
+              skoro wygrywa się (odziwo) mecz z Barceloną. Już spieszę z
+              odpowiedzią. Otóż ja. Nie powiem, że nie zostałem mile zaskoczony
+              wynikiem spotkania. Co prawda trafiłem wynik, bo obstawiałem 3:1..
+              tyle że w drugą stronę. Dobry mecz Realu. Po prostu, byli lepsi. W
+              Madrycie odziwo +3 stopnie. Mam jednak mieszane odczucia, czy
+              dodatnia temperatura utrzyma się na długo.
+            </p>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title"
+            >Świetna zapowiedź</h3>
+            <p class="article__paragraph">
+              Czy może być coś lepszego niż uspokojenie swojego fana tuż przed El
+              Clásico? Otóż nie mam pojęcia, ponieważ Real postanawia pokazać
+              całęmu światu, że podtrzymuje wybitną formę, dostając bencki od
+              zdziesiętkowanego Szachtaru w Lidze Mistrzów 2:3. Nie mogę się
+              doczekać soboty i godziny 16:00..
+            </p>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Wyrównana walka o mistrzostwo.</h3>
+            <p class="article__paragraph">
+              Już od samego początku sezonu Primera Division nas rozpieszcza. Po
+              zaledwie 5 kolejkach pretendenci do mistrzostwa (czyt. real i
+              barcelona) stracili już 4 punkty, co tylko utwierdza nas w
+              przekonaniu, że walka o koronę ligi hiszpańskiej będzie trwała,
+              podobnie jak w poprzednim sezonie, do ostatniej kolejki.
+            </p>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Zabawę czas zacząć</h3>
+            <p class="article__paragraph"
+            >
+              Drugie podejście do kursu oficjalnie się zaczęło. Tym razem zamiast
+              pisać o sobie pobawię się w pisanie o jakże pięknym klubie z ligi
+              hiszpańskiej. Zobaczymy czy tym razem uda mi się dotrwać do końca
+              kursu i pójść dalej.. Mam taką nadzieję a więc, Bawmy się!
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__heading">
+          Zainspirowany wynikami spotkań Realu Madryt.
+        </p>
+        <a class="footer__button" href="#top">Wróć na górę strony.</a>
+      </footer>
+    </main>
+
+    
   </body>
 </html>
