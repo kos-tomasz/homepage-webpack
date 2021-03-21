@@ -3,7 +3,7 @@ import moment from "moment";
 
 // import {registerSW} from './pwa.js';
 // registerSW();
-const date = moment().format("L");
+const date = moment().format('L');
 console.log(`HELLO 🚀 Date of today: ${date}`);
 
 const name = "Tomek";

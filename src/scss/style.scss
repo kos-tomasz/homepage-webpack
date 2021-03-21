@@ -1,7 +1,6 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
 
 html {
   box-sizing: border-box;
@@ -14,15 +13,16 @@ html {
 }
 
 body {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    86deg,
-    rgba(2, 0, 36, 1) 2%,
-    rgba(11, 18, 62, 1) 15%,
-    rgba(29, 50, 109, 1) 61%,
-    rgba(153, 152, 176, 1) 86%,
-    rgba(255, 254, 253, 0) 99%
-  );
+  // background: rgb(2, 0, 36);
+  // background: linear-gradient(
+  //   86deg,
+  //   rgba(2, 0, 36, 1) 2%,
+  //   rgba(11, 18, 62, 1) 15%,
+  //   rgba(29, 50, 109, 1) 61%,
+  //   rgba(153, 152, 176, 1) 86%,
+  //   rgba(255, 254, 253, 0) 99%
+  // );
+  background-color: rgb(13, 56, 88);
 }
 
 .nav-header {
