@@ -1,4 +1,4 @@
-https://kos-tomasz.github.io/homepage-webpack/
+`Click the link [Homepage-webpack](https://kos-tomasz.github.io/homepage-webpack/) to see the latest published version.`
 
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
