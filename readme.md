@@ -1,10 +1,9 @@
 Click the link [Homepage-webpack](https://kos-tomasz.github.io/homepage-webpack/) to see the latest published version.
+# Homepage-webpack
+
+Simple website used for practice.
 
 ![cover](https://cotenfrontend.pl/img/cover.png)
-
-# WTF Webpack Starter Kit 
-
-Simple toolkit for your static websites development.
 
 ## How to use it?
 
