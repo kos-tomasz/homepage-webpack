@@ -45,6 +45,14 @@ body {
     color: #000;
     &--study {
       color: #fff;
+      will-change: background-color, color;
+      transition: 
+        background-color 0.5s 0.3s linear, 
+        color 0.5s 0.3s linear;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
     &::before {
       content: "";
@@ -56,11 +64,6 @@ body {
       margin: 0 2px 2px 0;
     }
   }
-}
-
-.navigation__link--study:hover {
-  background-color: #fff;
-  color: #000;
 }
 
 .hamburger {
