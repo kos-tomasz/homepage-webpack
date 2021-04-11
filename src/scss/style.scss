@@ -136,6 +136,13 @@ body {
   padding: 1vw 4vw;
   border: solid 1px #adc2dd;
   margin-bottom: 1vw;
+  color: #fff;
+  will-change: color, background-color;
+  transition: background-color .2s .1s linear, color .2s .1s linear;
+  &:hover{
+    background-color: rgba(165, 158, 158, 0.849);
+    color: rgba(124, 40, 40, 0.849);
+  }
   &__title {
     color: #b3c2eb;
     &::before {
@@ -148,9 +155,7 @@ body {
       margin: 0 2px 1px 0;
     }
   }
-  &__paragraph {
-    color: #fff;
-  }
+  &__paragraph {}
 }
 
 .footer {
