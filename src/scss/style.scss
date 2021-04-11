@@ -136,13 +136,16 @@ body {
   margin-bottom: 1vw;
   color: #fff;
   will-change: color, background-color;
-  transition: background-color 0.2s 0.1s linear, color 0.2s 0.1s linear;
+  transition: 
+    background-color 0.2s 0.1s linear, 
+    color 0.2s 0.1s linear;
   &:hover {
     background-color: rgba(165, 158, 158, 0.849);
     color: rgba(124, 40, 40, 0.849);
   }
   &__title {
     color: #b3c2eb;
+    // transition: color .2s linear;        TO DO   
     &::before {
       content: "";
       display: inline-block;
