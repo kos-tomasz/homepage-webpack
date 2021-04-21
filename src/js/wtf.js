@@ -10,9 +10,8 @@ import moment from "moment";
 const date = moment().format('L');
 console.log(`HELLO 🚀 Date of today: ${date}`);
 
-const studyHeading = document.querySelector(".header__study-article--js");
-studyHeading.innerHTML = `Najpierw mówi, że to co się da robić za pomocą HTML'a robimy HTML'em, a teraz każe pisać <strong> ten </strong> tekst za pomocą JS'a..`;
-
+const navDate = document.querySelector(".nav-date--js");
+navDate.innerHTML = `${date}`;
 
 const hamburger = document.querySelector(".hamburger--js");
 
@@ -20,6 +19,10 @@ hamburger.addEventListener("click", () => {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation__open");
 });
+
+
+const studyHeading = document.querySelector(".header__study-article--js");
+studyHeading.innerHTML = `Najpierw mówi, że to co się da robić za pomocą HTML'a robimy HTML'em, a teraz każe pisać <strong> ten </strong> tekst za pomocą JS'a..`;
 
 
 fetch('https://api.github.com/users/kos-tomasz/repos?sort=created&direction=asc')
