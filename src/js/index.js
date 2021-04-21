@@ -34,10 +34,6 @@ navDate.innerHTML = `${date}`;
 const realHeading = document.querySelector(".header__real-article--js");
 realHeading.innerHTML = `Strona przedstawia niezobowiązujące, pisane w luźnym tonie nowinki o ekipie z Madrytu. </br> PS: ten tekst pisałem JS'em tylko dlatego, że miałem takie zadanie.`;
 
-// const studyHeading = document.querySelector(".header__study-article--js");
-// studyHeading.innerHTML = `Najpierw mówi, że to co się da robić za pomocą HTML'a robimy HTML'em, a teraz każe pisać <strong> ten </strong> tekst za pomocą JS'a..`;
-// Odkryłem, że musiałbym utworzyć i podpiąć drugi plik .js do podstrony, więc póki co przeżyję z jednym..
-// to samo z burger menu
 
 const hamburger = document.querySelector(".hamburger--js");
 
